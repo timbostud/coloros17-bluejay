@@ -1,0 +1,361 @@
+{
+  "device": "bluejay",
+  "system_input": "Raw ext4 system image from the already-patched ColorOS 17 Pixel 6a port, 7516192768 bytes",
+  "hardware_build": "CP1A.260405.005 (tested port hardware/boot/AVB images)",
+  "google_app_source": "Pixel 6a CP2A.260705.006 factory image",
+  "oppo_app_source": "PLK110_17.0.0.105(CN01)",
+  "oppo_archive_sha256": "d2a8b95ad93e2eeb3160ad11c6d76f23203c609cddbd45cb67d53fadd919b7ab",
+  "agc_app_source": "https://www.celsoazevedo.com/files/android/agc-camera/f/dl08/1/",
+  "hardware_sha256": {
+    "boot": "3d6606ea81ea4a1608444d3c0697dd99197b84b3f94947e01b08c6ac9e0470f5",
+    "dtbo": "ba60d4698c746edf7505dfc370f25a08604af3abd014dc9127960240830176e9",
+    "vbmeta": "52491400a253aeeea6dc8bfd1fc84f01c61eb23ac1447d0032930b040a546386",
+    "vbmeta_system": "b6891b91ba1bf756b474c9a657c08416e80d050ea579c4b8144b5a20bafedef4",
+    "vbmeta_vendor": "60b1349170d125d4a65f9dbb739eeafb4fb048338f5d85fc1ec24bfa53685bee",
+    "vendor": "5dd217185f181d2ac45011ca0e57c7a346e7601c212f599635f57644c3b003d0",
+    "vendor_boot": "969bf554fef73324b8f540ac5ab06d244389e1a91f2895f201619ef8c2754004",
+    "vendor_dlkm": "763ae100d78265d559ff254f38734284131f1838833eeb740d8729495693cb9a"
+  },
+  "apps": [
+    {
+      "package": "com.agc.gcam",
+      "sha256": "52fa474dd0b8bb75af452daa5d7a7f0d248f9760ae9156dbdaa80abe581d8970",
+      "source": "agc",
+      "source_path": "AGC_Camera-1.8.6.apk",
+      "placement": "system",
+      "staged_filename": "AGCCamera.apk"
+    },
+    {
+      "package": "com.coloros.alarmclock",
+      "sha256": "c8d7bb09f10bb727cb49a14c0efe5ee99c339162e131c2e49f85ef5ca65632bf",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Clock/Clock.apk",
+      "placement": "system",
+      "staged_filename": "OppoClock.apk"
+    },
+    {
+      "package": "com.coloros.weather.service",
+      "sha256": "5c9ecd41b39f85f8c7f8096a93ec18c2705ad822c611e724ced38e0ddfe32e92",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/OppoWeatherService/OppoWeatherService.apk",
+      "placement": "system",
+      "staged_filename": "OppoWeatherService.apk"
+    },
+    {
+      "package": "com.coloros.weather2",
+      "sha256": "d8c51d4a2cbd6d596323e8e6b7a15e4fe130e485367865cb3fa989a28bf016c5",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OppoWeather2/OppoWeather2.apk",
+      "placement": "system",
+      "staged_filename": "OppoWeather.apk"
+    },
+    {
+      "package": "com.coloros.calculator",
+      "sha256": "038ca2077ace19729a61badd61c51560ae82275526069c9c2feffb5dc1c122ed",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Calculator2/Calculator2.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.note",
+      "sha256": "fd8b6a59cdda30a4ff1c58257f8ebd29d5273f8b656d2bd21281c18cf777b1dc",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OppoNote2/OppoNote2.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.filemanager",
+      "sha256": "7dc0cc2e42b227288d5a4257e991f16f44dcb60bb70b035cee2d12b141b1704e",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/FileManager/FileManager.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.soundrecorder",
+      "sha256": "1b0612b8cd4e0cb41e015fbeeed5da239d09ef99895b984390788de6b44fe92d",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/NewSoundRecorder/NewSoundRecorder.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.calendar",
+      "sha256": "ba72436c495e581e058878a82a9c5858b061e2bf08105871bc33e9a853354752",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Calendar/Calendar.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.compass2",
+      "sha256": "8c4e9273ff6cf01975de8d9957e63183a2bd536694c7b31e0860d5f4e9bb66b3",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OppoCompass2/OppoCompass2.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.market",
+      "sha256": "75d5e8e0fa509a400ef48b9f8b9e3c5d48e24c4a53e5713012e3f66401fa8122",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/KeKeMarket/KeKeMarket.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.oplus.themestore",
+      "sha256": "1cd7579061fb31d4fb087f22b50251892fc6093506ee418c08f62555c2c2425c",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/KeKeOplusThemeStore-CN/KeKeOplusThemeStore-CN.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.vip",
+      "sha256": "4a3aeb28836e91ed1f5cde698dade7f51c334348a7a528859c9283a624e362d0",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/KeKeUserCenter/KeKeUserCenter.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.oplus.account",
+      "sha256": "4c1d6e735eadb752efc9a1190d61808ff37b1d6b6a147551955fecacce0dc914",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/KeKeUserCenterAccount/KeKeUserCenterAccount.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.oshare",
+      "sha256": "edd0363df03bac4dfef4bfb87ea20c61bd9e360f6ca39892cabe4614e3adc76a",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/OShare/OShare.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.phonemanager",
+      "sha256": "35ba028ca7843868d9e9c5a17ad99a8cb988525efafd6c4bb5024f374c21d530",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/PhoneManager/PhoneManager.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.oplus.aipaper",
+      "sha256": "1a72103a0c8989839c4625d4ee567f9846c2504ef3dc5264786cdcbd4669e4a3",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/AIPaper/AIPaper.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.backuprestore",
+      "sha256": "c2941c9848c9570acc64774ea4a0eb37cf9aa55c9ba59fb0bfba7c992adaee66",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/BackupAndRestore/BackupAndRestore.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.yoli",
+      "sha256": "c40d3f8b032627fd52b2f95008aae6f95b7b7bb953be2eeebd193729acc84d69",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/BrowserVideo/BrowserVideo.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.health",
+      "sha256": "3bdecd3c3dd84fc1094f2cd6a02a575cbb06df00c764f4c5fe299d0394c1cb30",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Health/Health.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.themestore",
+      "sha256": "8ea7054f7cd61ea0f59ae069171c5fd447924472386696c88713bd042a831adc",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/KeKeThemeSpace/KeKeThemeSpace.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.music",
+      "sha256": "62c7b09fd872c772759d4585b5b4b79c0d1093321ead5bf1d75fc8df81d7cd0e",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Music/Music.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.ocrscanner",
+      "sha256": "8867e87ea300f3a780a2a46ac92e36544ddf7e19a331c83d01903b497d591ec9",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OcrScanner/OcrScanner.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "andes.oplus.documentsreader",
+      "sha256": "56fb8ef6bd3d06b8c033ecbcc9e5d0044b00c1c292f4ffb3c6892fa3d7f18efa",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OplusDocumentsReader/OplusDocumentsReader.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.android.email",
+      "sha256": "e30914986c2991a58b72aec153778277277ea24c40dcd9bbe97e42ccdbf1d6a6",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OplusEmail/OplusEmail.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.translate",
+      "sha256": "43437deba1b105fc856195efe10266e98d5bfac861fa80990dccebbf087d7acd",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/OppoTranslation/OppoTranslation.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.shortcuts",
+      "sha256": "f279c794a0a793d3c3c09a1efdec3d8f710918bd6f273b97eeed9c862491a127",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Shortcuts/Shortcuts.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.oplus.tips",
+      "sha256": "7d159599090ed88f148d9546a9888d7f372dc8a29e759990cfd2f33bc15cf028",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/Tips/Tips.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.browser",
+      "sha256": "caeda453881561b60e2342004688b86c830468dcb8e42a06231286581d88b6e1",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/Browser/Browser.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.heytap.cloud",
+      "sha256": "b7fad1b38db5151ca98afb9905295c32781010417d994b470d4659d6ab3c66d9",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/CloudService/CloudService.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.familyguard",
+      "sha256": "c0f581915864e79f1bb886c65e2a45431a138b440ffc5b20c9ffd13b531785aa",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/del-app/FamilyGuard/FamilyGuard.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.childrenspace",
+      "sha256": "6e57bb7d3c9df9cd7d19074d0323c631bb3bb7cd7674db3ee0133d9583644a56",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/ChildrenSpace/ChildrenSpace.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.digitalwellbeing",
+      "sha256": "f4cca7316602ac01ddcdfeac0107fa72f64415c721c366da48f8d6b6e752efa0",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/DigitalWellBeing/DigitalWellBeing.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.operationManual",
+      "sha256": "a8b428281866d41b6da56ba3a75e27e5503c4b3e2c1fc6a614294510159519bd",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/app/OplusOperationManual/OplusOperationManual.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.coloros.video",
+      "sha256": "0e14f854553fbdfdce0e0c84e251edb15b70e0658d5e64129076f8e215067200",
+      "source": "oppo",
+      "source_path": "my_stock/my_stock/priv-app/VideoGallery/VideoGallery.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.android.vending",
+      "sha256": "2ca3ebdb5b586fa4d9caf0b82dfdc69a37a3fb98bf6b14dbe2d03deccc95f75c",
+      "source": "google",
+      "source_path": "priv-app/Phonesky/Phonesky.apk",
+      "placement": "base-system"
+    },
+    {
+      "package": "com.google.android.trichromelibrary",
+      "sha256": "568e8298755bf03f4bfd454820e46b052cf24b614118449d084d40b27c8fc1e1",
+      "source": "google",
+      "source_path": "app/TrichromeLibrary/TrichromeLibrary.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.android.chrome",
+      "sha256": "c0dfca71fcf3ed4d23e6d12769f80425bad92d31f237a97247412f23d39d7d67",
+      "source": "google",
+      "source_path": "app/Chrome/Chrome.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.calendar",
+      "sha256": "75304f9e8b9dfebdf04e9285514c604e64cc2f36ea129ed09366c8e82bc25384",
+      "source": "google",
+      "source_path": "app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.apps.docs",
+      "sha256": "96d0189a98e732a15c1de9d45e2fb0ad037687178559b155661cb2d17722370d",
+      "source": "google",
+      "source_path": "app/Drive/Drive.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.tts",
+      "sha256": "6d43057dc63577fb3eba5c658a0e0ec8b369e4ed77ae6bec7d53a6d003aa2602",
+      "source": "google",
+      "source_path": "app/GoogleTTS/GoogleTTS.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.apps.maps",
+      "sha256": "024a501d58e55ee1644da54d86babbd6c24f2f0c2b0d745114be4cb7330f001b",
+      "source": "google",
+      "source_path": "app/Maps/Maps.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.apps.photos",
+      "sha256": "706615394a42a61514406be884d4375ed53aba70c573558d1afa30e5534791ab",
+      "source": "google",
+      "source_path": "app/Photos/Photos.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.gm",
+      "sha256": "e6103d3725a0cd051479692f6997929c241b81b3616ca81ec6b145a6d7068c11",
+      "source": "google",
+      "source_path": "app/PrebuiltGmail/PrebuiltGmail.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.youtube",
+      "sha256": "5188771680853e3d86434573dc5db2558d1b72ac7e371a7e8d52ee394bdffc61",
+      "source": "google",
+      "source_path": "app/YouTube/YouTube.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.apps.youtube.music",
+      "sha256": "272a07443ec241c99e04cc9b1d79b4653ef9ab8ab352cd53c4b5b44e2b860b11",
+      "source": "google",
+      "source_path": "app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.googlequicksearchbox",
+      "sha256": "a884fc5310321ad6aae87e9f2dc2ac0969eb9df5f8c04ef25105129306278432",
+      "source": "google",
+      "source_path": "priv-app/Velvet/Velvet.apk",
+      "placement": "post-setup"
+    },
+    {
+      "package": "com.google.android.videos",
+      "sha256": "2e05509945210b9dc55827ab435fee1bd9b2c07f8e2d63237e7436b421551fa4",
+      "source": "google",
+      "source_path": "app/Videos/Videos.apk",
+      "placement": "post-setup"
+    }
+  ]
+}

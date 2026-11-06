@@ -1,0 +1,8 @@
+__pycache__/
+bundle/
+*.apk
+*.img
+*.zip
+*.pk8
+*.keystore
+*.jks
